@@ -8,8 +8,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-
 public class TouristSpotCardAdapter extends ArrayAdapter<TouristSpot> {
 
     public TouristSpotCardAdapter(Context context) {
@@ -31,21 +29,27 @@ public class TouristSpotCardAdapter extends ArrayAdapter<TouristSpot> {
 
         TouristSpot spot = getItem(position);
 
-        holder.name.setText(spot.name);
-        holder.city.setText(spot.city);
-        Glide.with(getContext()).load(spot.url).into(holder.image);
+        holder.category.setText(spot.category);
+        holder.title.setText(spot.title);
+        holder.gukhwa.setText( spot.gukhwa );
+        holder.contents.setText( spot.contents );
+        //Glide.with(getContext()).load(spot.url).into(holder.image);
 
         return contentView;
     }
 
     private static class ViewHolder {
-        public TextView name;
-        public TextView city;
+        public TextView category;
+        public TextView title;
+        public TextView gukhwa;
+        public TextView contents;
         public ImageView image;
 
         public ViewHolder(View view) {
-            this.name = (TextView) view.findViewById(R.id.item_tourist_spot_card_name);
-            this.city = (TextView) view.findViewById(R.id.item_tourist_spot_card_city);
+            this.category = (TextView) view.findViewById(R.id.category);
+            this.title = (TextView) view.findViewById(R.id.title);
+            this.gukhwa = (TextView) view.findViewById(R.id.gukhwa);
+            this.contents = (TextView) view.findViewById(R.id.contents);
             this.image = (ImageView) view.findViewById(R.id.item_tourist_spot_card_image);
         }
     }

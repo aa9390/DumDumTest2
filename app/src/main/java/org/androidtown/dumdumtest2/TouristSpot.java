@@ -1,13 +1,16 @@
 package org.androidtown.dumdumtest2;
 
 public class TouristSpot {
-    public String name;
-    public String city;
-    public String url;
 
-    public TouristSpot(String name, String city, String url) {
-        this.name = name;
-        this.city = city;
-        this.url = url;
+    public String category;
+    public String title;
+    public String gukhwa;
+    public String contents;
+
+    public TouristSpot(String category, String title, String gukhwa, String contents) {
+        this.category = category;
+        this.title = title;
+        this.gukhwa = gukhwa;
+        this.contents = contents;
     }
 }

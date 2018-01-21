@@ -29,7 +29,6 @@ dependencies {
     // Card Stack View
     compile "com.yuyakaido.android:card-stack-view:1.0.0-beta8"
 
-
     // Card View
     implementation 'com.android.support:cardview-v7:26.1.0'
     compile 'com.android.support:cardview-v7:26.1.0'
