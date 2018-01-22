@@ -1,5 +1,6 @@
 package org.androidtown.dumdumtest2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
@@ -96,6 +97,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCardClicked(int index) {
                 Log.d("CardStackView", "onCardClicked: " + index);
+                Intent intent = new Intent( MainActivity.this, Mypage.class);
+                startActivity( intent );
                 Toast.makeText( MainActivity.this, "클릭", Toast.LENGTH_SHORT ).show();
             }
         });
