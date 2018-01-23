@@ -6,12 +6,34 @@
     android:orientation="vertical"
     android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="?attr/colorPrimary"
+        app:contentInsetStart="0dp"
+        >
+        <!--android:theme="?attr/actionBarTheme"
+                app:titleTextAppearance="@style/Toolbar.TitleText"-->
+
+    <TextView
+        android:id="@+id/txv_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="마이페이지"
+        android:gravity="center"
+        android:textColor="#4b4b4b"
+        android:textSize="15sp" />
+    </android.support.v7.widget.Toolbar>
+
     <LinearLayout
         android:id="@+id/Layout1"
         android:layout_width="match_parent"
         android:layout_height="120dp"
         android:background="@android:color/holo_orange_light"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_below="@+id/toolbar">
 
 
     </LinearLayout>
