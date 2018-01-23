@@ -17,14 +17,14 @@
         <!--android:theme="?attr/actionBarTheme"
                 app:titleTextAppearance="@style/Toolbar.TitleText"-->
 
-    <TextView
-        android:id="@+id/txv_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="마이페이지"
-        android:gravity="center"
-        android:textColor="#4b4b4b"
-        android:textSize="15sp" />
+        <TextView
+            android:id="@+id/txv_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="마이페이지"
+            android:textColor="#4b4b4b"
+            android:textSize="15sp" />
     </android.support.v7.widget.Toolbar>
 
     <LinearLayout
