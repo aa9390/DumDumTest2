@@ -12,10 +12,13 @@ public class Mypage extends AppCompatActivity  implements FragmentTwo.OnFragment
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private android.support.v7.widget.Toolbar toolbar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_mypage );
+        setContentView( R.layout.activity_mypage);
+
+
 
         tabLayout = (TabLayout) findViewById( R.id.tablayout );
         viewPager = (ViewPager) findViewById( R.id.viewPager );
@@ -29,12 +32,16 @@ public class Mypage extends AppCompatActivity  implements FragmentTwo.OnFragment
 
 
         toolbar = (android.support.v7.widget.Toolbar) findViewById( R.id.toolbar );
-        toolbar.setTitle( "마이페이지" );
         //toolbar.setHorizontalFadingEdgeEnabled( true );
         //toolbar.setTitleMarginStart( 185 );
         toolbar.setTitleTextColor( Color.GRAY );
         setSupportActionBar( toolbar );
-        getSupportActionBar().setDisplayHomeAsUpEnabled( true );
+        //getSupportActionBar().setDisplayHomeAsUpEnabled( true );
+
+
+        //blur();
+
+
 
     }
 

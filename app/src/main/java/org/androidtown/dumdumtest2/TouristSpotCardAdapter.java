@@ -35,6 +35,7 @@ public class TouristSpotCardAdapter extends ArrayAdapter<TouristSpot> {
         holder.contents.setText( spot.contents );
         //Glide.with(getContext()).load(spot.url).into(holder.image);
 
+
         return contentView;
     }
 
@@ -50,7 +51,11 @@ public class TouristSpotCardAdapter extends ArrayAdapter<TouristSpot> {
             this.title = (TextView) view.findViewById(R.id.title);
             this.gukhwa = (TextView) view.findViewById(R.id.gukhwa);
             this.contents = (TextView) view.findViewById(R.id.contents);
-            this.image = (ImageView) view.findViewById(R.id.item_tourist_spot_card_image);
+            //this.image = (ImageView) view.findViewById(R.id.item_tourist_spot_card_image);
+
+
+
+
         }
     }
 

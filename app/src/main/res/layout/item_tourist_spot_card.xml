@@ -12,22 +12,49 @@
     card_view:cardCornerRadius="8dp">
 
     <RelativeLayout
+        android:id="@+id/mainCard"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <ImageView
-            android:id="@+id/item_tourist_spot_card_image"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="centerCrop"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <TextView
-            android:id="@+id/contents"
+            android:id="@+id/category"
             android:layout_width="match_parent"
-            android:layout_height="412dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="top"
+            android:text="묘지 이름"
+            android:textColor="#868686"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+
+        <View
+            android:layout_below="@id/category"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#d7d7d7"/>
+
+
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="제목"
+            android:textColor="#585858"
+            android:layout_below="@id/category"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
+        <TextView
+            android:id="@+id/contents"
+            android:layout_below="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
             android:text="내용"
             android:textSize="15sp"
             android:textStyle="bold"
@@ -36,46 +63,37 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <LinearLayout
+            app:layout_constraintVertical_bias="0.0"
+            android:padding="10dp"/>
+        <View
+            android:layout_below="@id/contents"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/background_black_gradation"
-            android:orientation="vertical"
-            android:id="@+id/linearLayout2">
-            
-            <TextView
-                android:id="@+id/category"
-                android:layout_width="match_parent"
-                android:layout_height="25dp"
-                android:textColor="#ffffff"
-                android:text="묘지 이름"
-                android:textSize="15sp"
-                android:textStyle="bold" />
+            android:layout_height="1dp"
+            android:background="#d7d7d7"/>
 
+]
+        <TextView
+            android:id="@+id/gukhwa"
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/contents"
+            android:gravity="right"
+            android:text="국화 00송이"
+            android:textColor="#868686"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="10dp"/>
 
-            <TextView
-                android:id="@+id/title"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="제목"
-                android:textColor="#ffffff"
-                android:textSize="25sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/gukhwa"
-                android:textColor="#ffffff"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="국화 00송이"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-        </LinearLayout>
-
-
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/right"
+            android:layout_toRightOf="@+id/gukhwa"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_below="@+id/contents"/>
     </RelativeLayout>
+
+
 
 </android.support.v7.widget.CardView>

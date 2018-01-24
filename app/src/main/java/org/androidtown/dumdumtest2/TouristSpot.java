@@ -7,10 +7,11 @@ public class TouristSpot {
     public String gukhwa;
     public String contents;
 
-    public TouristSpot(String category, String title, String gukhwa, String contents) {
+    public TouristSpot(String category, String title,String contents, String gukhwa) {
         this.category = category;
         this.title = title;
         this.gukhwa = gukhwa;
         this.contents = contents;
+
     }
 }
